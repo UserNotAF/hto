@@ -1,6 +1,7 @@
 import logging
 from pathlib import Path
 
+
 LOG_DIR = Path("logs")
 LOG_DIR.mkdir(exist_ok=True)
 
@@ -8,6 +9,7 @@ LOG_FILE = LOG_DIR / "hto.log"
 
 
 def setup_logger():
+
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s | %(levelname)s | %(message)s",
@@ -17,4 +19,6 @@ def setup_logger():
         ]
     )
 
-    logging.info("Logger initialized.")
+    logging.info("========================================")
+    logging.info("HTO Logger initialized")
+    logging.info("========================================")
